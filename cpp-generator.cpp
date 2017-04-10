@@ -6,7 +6,7 @@
 /*   By: svelhinh <svelhinh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/10 15:15:21 by svelhinh          #+#    #+#             */
-/*   Updated: 2017/04/10 15:30:13 by svelhinh         ###   ########.fr       */
+/*   Updated: 2017/04/10 15:35:34 by svelhinh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	generateClass(string filename)
 	<< "public:" << endl
 	<< "\t" << filename << "( void );" << endl
 	<< "\t" << filename << "( " << filename << " const & src );" << endl
-	<< "\t~" << filename << "(void);" << endl << endl
+	<< "\t~" << filename << "( void );" << endl << endl
 	<< "\t" << filename << " & operator=( " << filename << " const & rhs );" << endl
 	<< "};" << endl << endl
 	<< "#endif" << endl;
