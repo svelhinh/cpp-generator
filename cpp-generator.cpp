@@ -6,7 +6,7 @@
 /*   By: svelhinh <svelhinh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/10 15:15:21 by svelhinh          #+#    #+#             */
-/*   Updated: 2017/04/10 15:15:22 by svelhinh         ###   ########.fr       */
+/*   Updated: 2017/04/10 15:30:13 by svelhinh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ void	generateClass(string filename)
 	<< "\t*this = src;" << endl
 	<< "\treturn;" << endl
 	<< "}" << endl << endl
-	<< "~" << filename << "::" << filename << "( void )" << endl
+	<< filename << "::" << "~" << filename << "( void )" << endl
 	<< "{" << endl
 	<< "\treturn;" << endl
 	<< "}" << endl << endl
