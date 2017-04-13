@@ -6,7 +6,7 @@
 /*   By: svelhinh <svelhinh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/10 15:15:21 by svelhinh          #+#    #+#             */
-/*   Updated: 2017/04/13 11:45:59 by svelhinh         ###   ########.fr       */
+/*   Updated: 2017/04/13 11:47:48 by svelhinh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,8 +84,8 @@ void	generateClassTemplate(string filename)
 
 	outputFile.open(filename + string(".hpp"));
 
-	outputFile << "#ifndef " << filename << "_tpp" << endl
-	<< "#define " << filename << "_tpp" << endl << endl
+	outputFile << "#ifndef " << filename << "_hpp" << endl
+	<< "#define " << filename << "_hpp" << endl << endl
 	<< "template< typename T >" << endl
 	<< "class " << filename << endl
 	<< "{" << endl
