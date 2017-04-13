@@ -6,7 +6,7 @@
 /*   By: svelhinh <svelhinh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/10 15:15:21 by svelhinh          #+#    #+#             */
-/*   Updated: 2017/04/12 16:38:43 by svelhinh         ###   ########.fr       */
+/*   Updated: 2017/04/13 11:45:59 by svelhinh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,10 +90,10 @@ void	generateClassTemplate(string filename)
 	<< "class " << filename << endl
 	<< "{" << endl
 	<< "public:" << endl
-	<< "\t" << filename << "< T >( void );" << endl
-	<< "\t" << filename << "< T >( " << filename << "< T > const & src );" << endl
+	<< "\t" << filename << "( void );" << endl
+	<< "\t" << filename << "( " << filename << "< T > const & src );" << endl
 	<< "\tvirtual ~" << filename << "( void );" << endl << endl
-	<< "\t" << filename << "< T > & operator=( " << filename << " const & rhs );" << endl
+	<< "\t" << filename << " & operator=( " << filename << " const & rhs );" << endl
 	<< "};" << endl << endl
 	<< "#endif" << endl;
 
